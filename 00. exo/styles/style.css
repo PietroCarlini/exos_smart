@@ -1,0 +1,52 @@
+/* Permet de faire tenir les padding & border dans les largeurs des boites */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+/* Fait tenir les images dans leur parent et enlève l'espacement en bottom */
+img {
+    display: block;
+    max-width:100%;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+input{
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    outline: none;
+    font-family: inherit;
+    font-size: 30px;
+}
+
+button{
+    padding: 10px;
+    border: 1px solid gray;
+    background-color: crimson;
+    color: #fff;
+    border-radius: 5px;
+    margin: 0;
+    font-family: inherit;
+    cursor: pointer;
+    font-size: 30px;
+}
+
+h1 {
+    margin: 0 auto 50px;
+    font-size: 56px;
+}
+
+.listeFavoris{
+    font-size: 40px;
+    margin-top: 20px;
+    text-align: center;
+    width: 200px;
+}

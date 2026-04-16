@@ -1,0 +1,25 @@
+Tu vas créer un gestionnaire de participants pour un événement. On peut ajouter des noms, les voir dans une liste, et supprimer un participant en cliquant sur un bouton à côté de son nom. Un récapitulatif affiche la liste complète des noms sous forme de texte en bas de page.
+
+**Ce que tu vas pratiquer**
+- push() pour ajouter
+- indexOf() pour trouver la position
+- splice() pour supprimer
+- Boucle for pour l'affichage et la recherche
+- querySelectorAll() pour récupérer plusieurs éléments
+- Manipulation du DOM
+
+
+**Fonctionnalités attendues**
+- Ajouter un participant (champ texte + bouton)
+- La liste s'affiche avec, pour chaque participant, un bouton "Supprimer"
+- Cliquer sur "Supprimer" → retire le participant du tableau avec splice() → met à jour l'affichage
+- Un champ de recherche permet de taper un nom et de savoir si la personne est dans la liste → affiche ":white_check_mark: Présent(e) !" ou ":x: Absent(e)"
+- Un récapitulatif en bas affiche tous les noms séparés par des virgules (met à jour automatiquement)
+
+**Marche à suivre (pour ceux qui en ont besoin)**
+1. Initialisation (tableau vide, récupérer les éléments du DOM)
+2. Création d'une fonction afficherParticipants( ) qui doit : vider l'UL, boucler sur les participants avec un for, créer un <li> par participant, ajouter un bouton supprimer dans le <li>
+3. Dans afficherParticipants( ), utilise une boucle for pour construire une chaîne de caractères avec tous les noms séparés par ", " et afficher cette chaîne dans .recap
+4. Gérer le cas où le tableau est vide (au début ou si il devient vide) avec un message par défaut
+5. Ajouter un participant au click dans le tableau
+6. Supprimer un participant au click en utilisant indexOf( )
